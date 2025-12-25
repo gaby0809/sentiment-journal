@@ -28,7 +28,7 @@
                     <textarea name="journal_text"></textarea>
 
                 {% if result %}
-                    <h3>{{ result }}</h3>
+                    <h3 class="result {{ result|lower }}">{{ result }}</h3>
                 {% endif %}
 
                 </form>
