@@ -19,11 +19,9 @@
 
         <div class="card mt-4">
             <div class="card-body text-center">
-<<<<<<< HEAD
-                <p>This is Day 1. The app is running.</p>
-=======
-                <p>{{ result }}</p>
->>>>>>> c92180ab0e7ac906c0f199b2ef8f93e6053d58c6
+                {% if result %}
+                    <p>{{ result }}</p>
+                {% endif %}
             </div>
         </div>
     </div>
