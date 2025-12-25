@@ -19,9 +19,21 @@
 
         <div class="card mt-4">
             <div class="card-body text-center">
+
+                <form method ="POST">
+                    <button type="submit" class="btn-primary mt-3">
+                        Analyze
+                    </button>
+
+                    <textarea name="journal_text"></textarea>
+
                 {% if result %}
                     <h3>{{ result }}</h3>
                 {% endif %}
+
+                </form>
+
+
             </div>
         </div>
     </div>
