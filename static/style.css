@@ -28,12 +28,6 @@ textarea:focus {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
-
-.card-hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
 .card-body {
     padding: 30px;
 }
@@ -47,14 +41,13 @@ textarea:focus {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     background: linear-gradient(90deg, #c69c6d, #a67c52);
     color: white;
+
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 .custom-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-.result {
-    margin-top: 20px;
-    font-weight: bold;
 }
 
 .positive {
@@ -82,13 +75,40 @@ p {
     border-radius: 15px;
     background-color: #fff9f2;
     transition: border 0.3s ease;
+    margin-bottom: 10px;
+    border-width: 3px;
 }
 .result-text {
     margin-top: 8px;
     font-size: 15px;
+    text-align: center;
     color: #7a5e4c;
+
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
 }
 
-.result-box.positive { border: 2px solid #28a745; }
-.result-box.negative { border: 2px solid #dc3545; }
-.result-box.neutral  { border: 2px solid #ffc107; }
+.result-box.positive { 
+    border: 2px solid #28a745;
+    background-color: #eaf7ee; 
+}
+.result-box.negative { 
+    border: 2px solid #dc3545;
+    background-color: #fdecec;
+}
+.result-box.neutral  { 
+    border: 2px solid #ffc107; 
+    background-color: #fff7e0;
+}
+
+.sentiment-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+.sentiment-emoji {
+    font-size: 34px;
+    margin-left: 8px;
+    vertical-align: middle;
+}

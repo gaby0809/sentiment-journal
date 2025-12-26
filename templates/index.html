@@ -28,15 +28,27 @@
                     </button>
 
                 {% if result %}
-                    <div class="result {{ result|lower }}">
+                    <div class="result-box {{ result|lower }}">
                         <h3>
+                            <span class="sentiment-text">
                             {% if result == 'Positive' %}
-                                Positive😊
+                                Positive
                             {% elif result == 'Negative' %}
-                                Negative😞
+                                Negative
                             {% else %}
-                                Neutral😐
+                                Neutral
                             {% endif %}
+                            </span>
+
+                            <span class="sentiment-emoji">
+                            {% if result == 'Positive' %}
+                                😊
+                            {% elif result == 'Negative' %}
+                                😞
+                            {% else %}
+                                😐
+                            {% endif %}
+                            </span>
                         </h3>
 
                         <p class="result-text">
