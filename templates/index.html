@@ -21,14 +21,34 @@
             <div class="card-body text-center">
 
                 <form method ="POST">
-                    <button type="submit" class="btn-primary mt-3">
+                    <textarea name="journal_text"></textarea>
+
+                    <button type="submit" class="custom-btn">
                         Analyze
                     </button>
 
-                    <textarea name="journal_text"></textarea>
-
                 {% if result %}
-                    <h3 class="result {{ result|lower }}">{{ result }}</h3>
+                    <div class="result {{ result|lower }}">
+                        <h3>
+                            {% if result == 'Positive' %}
+                                Positive😊
+                            {% elif result == 'Negative' %}
+                                Negative😞
+                            {% else %}
+                                Neutral😐
+                            {% endif %}
+                        </h3>
+
+                        <p class="result-text">
+                            {% if result == 'Positive' %}
+                                Keep up the great mood! Remember to spread positivity around you.
+                            {% elif result == 'Negative' %}
+                                It's okay to have tough days. Consider talking to a friend or practicing self-care.
+                            {% else %}
+                                A balanced mindset is key. Take time to reflect and stay grounded.
+                            {% endif %}
+                        </p>
+                    </div>
                 {% endif %}
 
                 </form>
