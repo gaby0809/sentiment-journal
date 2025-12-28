@@ -76,7 +76,10 @@ p {
     background-color: #fff9f2;
     transition: border 0.3s ease;
     margin-bottom: 10px;
+    
+    border-style: solid;
     border-width: 3px;
+    border-color: transparent;
 }
 .result-text {
     margin-top: 8px;
@@ -91,15 +94,15 @@ p {
 }
 
 .result-box.positive { 
-    border: 2px solid #28a745;
+    border: solid #28a745;
     background-color: #eaf7ee; 
 }
 .result-box.negative { 
-    border: 2px solid #dc3545;
+    border: solid #dc3545;
     background-color: #fdecec;
 }
 .result-box.neutral  { 
-    border: 2px solid #ffc107; 
+    border: solid #ffc107; 
     background-color: #fff7e0;
 }
 
